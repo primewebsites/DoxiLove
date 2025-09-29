@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoxiLove — PrimeWeb</title>
+  <meta name="description" content="DoxiLove — Banho, tosa, ração e carinho para seu melhor amigo" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="img/logo.png" alt="Logo DoxiLove" class="logo" />
+      <h1>DoxiLove</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Cuidamos do seu pet com carinho</h2>
+      <p>Banho, tosa, rações e acessórios para o seu melhor amigo.</p>
+      <a href="#servicos" class="btn-primary">Conheça nossos serviços</a>
+    </div>
+    <img src="img/img-salsicha.png" alt="Cachorro feliz" class="hero-img" />
+  </section>
+
+  <section id="servicos" class="container">
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/banho.png" alt="Banho e tosa" />
+        <h3>Banho & Tosa</h3>
+        <p>Higiene e estética com cuidado especial para seu pet.</p>
+      </div>
+      <div class="card">
+        <img src="img/veterinario.jpg" alt="Atendimento veterinário" />
+        <h3>Veterinário</h3>
+        <p>Profissionais qualificados para cuidar da saúde do seu bichinho.</p>
+      </div>
+      <div class="card">
+        <img src="img/hotel.jpg" alt="Hotel para pets" />
+        <h3>Hotelzinho</h3>
+        <p>Ambiente seguro e confortável para quando você precisar viajar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos" class="container">
+    <h2>Produtos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/racao.jpg" alt="Ração" />
+        <h3>Rações</h3>
+        <p>Variedade de marcas e tipos para todas as idades.</p>
+      </div>
+      <div class="card">
+        <img src="img/brinquedo.jpg" alt="Brinquedo" />
+        <h3>Brinquedos</h3>
+        <p>Diversão garantida para cães e gatos.</p>
+      </div>
+      <div class="card">
+        <img src="img/acessorio.jpg" alt="Acessório" />
+        <h3>Acessórios</h3>
+        <p>Coleiras, caminhas e muito mais para o conforto do seu pet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="container">
+    <h2>Sobre nós</h2>
+    <p>Somos apaixonados por animais e trabalhamos todos os dias para oferecer os melhores produtos e serviços para seu pet. Nosso time é formado por especialistas dedicados e prontos para atender com carinho e profissionalismo.</p>
+  </section>
+
+  <section id="contato" class="container">
+    <h2>Contato</h2>
+    <form class="contato-form">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 DoxiLove da PrimeWeb. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<a href="https://wa.me/5599999999999" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Fale conosco no WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="35" fill="white">
+    <path d="M16 .6C7.6.6.6 7.6.6 16c0 2.8.7 5.6 2.2 8.1L.1 31.9l8-2.5c2.4 1.3 5.1 2 7.9 2 8.4 0 15.4-7 15.4-15.4S24.4.6 16 .6zm0 28c-2.5 0-4.9-.6-7-1.8l-.5-.3-4.7 1.5 1.5-4.6-.3-.5c-1.3-2.1-2-4.5-2-7C3 9 9 3 16 3s13 6 13 13-6 12.6-13 12.6zm7.2-9.5c-.4-.2-2.3-1.1-2.7-1.2-.4-.1-.6-.2-.8.2s-.9 1.2-1.1 1.4c-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.9-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.3-.3.4-.5.1-.2.1-.4 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.6-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.3 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.6.2 2.2.1.7-.1 2.3-1 2.6-1.8.3-.8.3-1.5.2-1.6-.2-.3-.4-.4-.8-.6z"/>
+  </svg>
+</a>
+
+
+
+</body>
+</html>

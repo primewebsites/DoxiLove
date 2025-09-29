@@ -1,0 +1,340 @@
+/* ============================
+   RESET & VARIÁVEIS
+   ============================ */
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --muted: #666;
+  --primary: #0b7a6b; /* verde água */
+  --accent: #f2b33d;  /* dourado suave */
+  --card-bg: #fbfbfb;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(15, 15, 15, 0.06);
+  --max-width: 1100px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* ============================
+   HEADER
+   ============================ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: var(--primary);
+  color: #fff;
+}
+header .logo {
+  width: 50px;
+  margin-right: 10px;
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+}
+
+
+.brand:hover {
+transform: scale(1.05);
+}
+
+
+.brand .logo {
+width: 55px;
+height: 55px;
+border-radius: 50%;
+object-fit: cover;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+border: 3px solid #ff9800; /* cor destaque */
+background: #fff;
+}
+
+
+.brand h1 {
+font-size: 1.6rem;
+font-weight: 700;
+color: #ff9800;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu a {
+  font-weight: 500;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: var(--accent);
+}
+
+/* ============================
+   HERO
+   ============================ */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #f5fdfc;
+}
+.hero-content {
+  max-width: 500px;
+}
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+.hero p {
+  margin-bottom: 20px;
+  color: var(--muted);
+}
+.hero-img {
+  max-width: 400px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #e09f25;
+}
+
+/* ============================
+   SEÇÕES GERAIS
+   ============================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--primary);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 15px;
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+.card p {
+  color: var(--muted);
+}
+
+/* ============================
+   SOBRE
+   ============================ */
+#sobre p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* ============================
+   CONTATO
+   ============================ */
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contato-form input,
+.contato-form textarea {
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: none;
+}
+.contato-form button {
+  align-self: flex-start;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* ============================
+   HERO CUSTOM
+   ============================ */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #f5fdfc 0%, #e6faf7 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 40px auto;
+  max-width: var(--max-width);
+  overflow: hidden;
+}
+.hero-content {
+  max-width: 480px;
+  z-index: 2;
+}
+.hero-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+  line-height: 1.2;
+}
+.hero-content p {
+  margin-bottom: 25px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+.hero-img {
+  max-width: 420px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transform: rotate(2deg);
+  transition: transform 0.4s ease;
+}
+.hero-img:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero-img {
+    margin-top: 20px;
+    max-width: 300px;
+    transform: none;
+  }
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+/* Animações para fade-in */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animação de pulso no WhatsApp */
+.pulse {
+  animation: pulseAnim 1s ease-in-out;
+}
+@keyframes pulseAnim {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
